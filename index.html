@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="singer">Arjit Singh</h2>
+        <h2 id="song">Phir bhi tumko chahunga</h2>
+
+        <div class="myimage">
+            <img src="./Images/Arjit.jpg" alt="">
+        </div>
+
+        <div >
+            <audio class="audio" src="./Audios/Arjit.mp3"></audio>  <!--controls is for displaying-->
+        </div>
+        <!-- Progressbar -->
+        <div class="progressbar-container">
+            <div class="progressbar"></div>
+
+            <div class="time">
+                <span style="float: left" id="current-time">0:00</span>
+                <span style="float: right" id="total-time">3:25</span>
+            </div>
+        </div>
+        <!-- Now song forward backward and pause buttons -->
+        <div class="controls">
+            <i class="fa-solid fa-backward" id="backward"></i>
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-forward" id="forward"></i>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
